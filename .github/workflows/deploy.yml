@@ -28,7 +28,7 @@ jobs:
       # Runs the aws credentials github action
       - uses: aws-actions/configure-aws-credentials@v1
         with:
-        # Pulled "secrets" from github secrets on the repository.
+        # Pulled "secrets" from github secrets on the repository
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-region: us-east-1
