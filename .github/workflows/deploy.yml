@@ -32,3 +32,4 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-region: us-east-1
+      - run: aws s3 sync ./out s3://test.surfql-splashpage
